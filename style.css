@@ -189,3 +189,21 @@ input[type='checkbox']{
 
 }
 
+.btn {
+
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 8px 12px;
+    background-color: #3b3b98;
+
+}
+
+.btn-large{
+
+    display: block;
+    width: 100%;
+
+}
+
