@@ -69,6 +69,15 @@ function passGen(lower, upper, number, symbol, length){
     const filterOptions = options.filter(item => Object.values(item)[0]);
     console.log('Filtered Options: ', filterOptions);
 
+    // When No Option is Selected
+    if(tickCount === 0){
+
+        // Password will not be generated
+        return '';
+
+    }
+
+
  
 }
 
