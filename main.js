@@ -2,8 +2,8 @@
 
 /* Character Codes 
 
-26 English Lowercase Characters -
-[
+26 English Lowercase Characters with corresponding ASCII code
+
   { "letter": "a", "code": 97 },
   { "letter": "b", "code": 98 },
   { "letter": "c", "code": 99 },
@@ -33,7 +33,7 @@
 ]
 
 
-[ 26 English Uppercase Characters:
+[ 26 English Uppercase Characters with corresponding ASCII code
 
   { "letter": "A", "code": 65 },
   { "letter": "B", "code": 66 },
@@ -64,6 +64,22 @@
 ]
 
 
+Digits from 0 to 9 with its corresponding ASCII code
+[
+  { "digit": "0", "code": 48 },
+  { "digit": "1", "code": 49 },
+  { "digit": "2", "code": 50 },
+  { "digit": "3", "code": 51 },
+  { "digit": "4", "code": 52 },
+  { "digit": "5", "code": 53 },
+  { "digit": "6", "code": 54 },
+  { "digit": "7", "code": 55 },
+  { "digit": "8", "code": 56 },
+  { "digit": "9", "code": 57 }
+]
+
+
+
 */
 
 // Generate Random Lowercase Character
@@ -87,5 +103,15 @@ function getRandomUpper(){
 }
 
 
-// Get Random Characters
-console.log(getRandomLower(), getRandomUpper()); 
+// Generate Random Digit
+function getRandomDigit(){
+
+    // Get random code between 48 - 57
+    // Get digit using random code 
+    return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
+}
+
+
+
+// Get Random Characters & Number
+console.log(getRandomLower(), getRandomUpper(), getRandomDigit()); 
