@@ -1,15 +1,12 @@
 // Define DOM Elements
 const result = document.getElementById('result');
-const length = document.getElementById('length');
+const lenInput = document.getElementById('length');
 const upperCheck = document.getElementById('uppercase');
 const lowerCheck = document.getElementById('lowercase');
 const numCheck = document.getElementById('number');
 const symbCheck = document.getElementById('symbol');
 const genBtn = document.getElementById('generate');
 const clipBtn = document.getElementById('clipboard');
-
-
-
 
 
 // Keep Functions inside randomFunc Object 
@@ -21,6 +18,17 @@ const randomFunc = {
     symbol: getRandomSymbol
 
 }
+
+
+// EVENT LISTENERS
+
+genBtn.addEventListener('click', () => {
+
+    // Get value from lenInput
+    const length = lenInput.value;
+    console.log(length);
+
+});
 
 
 
