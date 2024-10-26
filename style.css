@@ -1,3 +1,12 @@
 /* LOAD MULI FONT */
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
+* {
+
+    box-sizing: border-box;
+
+    /* Ensures padding and borders are included within the element's 
+    specified width and height, making layout calculations more 
+    predictable. */
+}
+
