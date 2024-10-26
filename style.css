@@ -78,7 +78,6 @@ input[type='checkbox']{
     max-width: 100%;
 
     /* box-shadow: 0px 2px 10px rgba(
-    
         0px: Horizontal offset — moves the shadow horizontally. 
             0px means no horizontal offset.
 
@@ -90,6 +89,101 @@ input[type='checkbox']{
         Here, 10px creates a moderately soft shadow.
 
         rgba(255, 255, 255, 0.2): Shadow color with transparency.
+    
+    */
+
+}
+
+.result-container{
+
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 12px 10px; /* top-bottom & left-right */
+    height: 50px;
+    width: 100%;
+
+    /* justify-content: flex-start;
+
+        justify-content controls the alignment of flex items along the main axis 
+        (usually the horizontal axis in a row).
+        flex-start aligns the items at the beginning of the main axis.
+    
+    */
+
+}
+
+.result-container #result{
+
+    word-wrap: break-word;
+    max-width: calc(100% - 40px);
+
+    /* word-wrap: break-word;
+
+        word-wrap determines if and how words should break when 
+        they exceed the element's width.
+
+        break-word allows a word to break onto the next line if 
+        it’s too long to fit within the width of the container. 
+
+        This prevents text overflow and ensures long words don't 
+        stretch the layout, which is especially useful for URLs or 
+        long strings.
+        
+        */
+
+    /* max-width: calc(100% - 40px);
+
+        max-width defines the maximum allowable width of an element.
+
+        calc(100% - 40px) uses the calc() function to dynamically calculate the width.
+
+        Here, it sets the maximum width to 100% of the parent container's width minus 40px.
+
+        This calculation can be useful for keeping padding, margins, or 
+        other spacing consistent, regardless of the container's actual width.
+    
+    */
+}
+
+.result-container .btn{
+
+    font-size: 20px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 40px;
+    width: 40px;
+
+    /*  top: 5px;
+
+        top specifies the vertical offset from the top edge of 
+        the containing (parent) element.
+
+        5px moves the element 5 pixels down from the top edge of its container.
+
+        right: 5px;
+
+        right specifies the horizontal offset from the right edge of 
+        the containing (parent) element.
+
+        5px moves the element 5 pixels left from the right edge of its container.
+
+        When These Properties Apply
+
+        top and right only take effect if the element has 
+        a position value of absolute, fixed, or relative:
+
+        With 'position: absolute' or fixed, they move the element 
+        relative to the nearest positioned ancestor or viewport.
+        
+        With 'position: relative', they adjust the element's position 
+        relative to its normal spot in the layout, shifting it 5px down 
+        and 5px left.
     
     */
 
