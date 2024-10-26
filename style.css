@@ -228,3 +228,14 @@ input[type='checkbox']{
 
 }
 
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 400px){
+
+    .result-container{
+
+        font-size: 14px; /* Smaller font size for smaller screens */
+
+    }
+
+}
