@@ -62,6 +62,10 @@ function passGen(lower, upper, number, symbol, length){
     // Log Total Checked Count
     console.log('typesCount: ', typesCount);
 
+    // Create Array with Status of Each Option
+    const typesArr = [{upper}, {lower}, {number}, {symbol}];
+    console.log(typesArr);
+
  
 }
 
