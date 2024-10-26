@@ -28,6 +28,16 @@ genBtn.addEventListener('click', () => {
     const length = +lenInput.value;
     console.log(typeof length);
 
+    // Checked Options
+    // True if Checked, False if unchecked
+    const hasLower = lowerCheck.checked;
+    const hasUpper = upperCheck.checked;
+    const hasNumber = numCheck.checked;
+    const hasSymbol = symbCheck.checked;
+
+    // Log Checked & Unchecked options
+    console.log(hasLower, hasUpper, hasNumber, hasSymbol);
+
 });
 
 
