@@ -10,3 +10,31 @@
     predictable. */
 }
 
+body{
+
+    background-color: #3b3b98;
+    color: #fff;
+    display: flex; /* Align elements */
+    font-family: 'Muli', sans-serif;
+    flex-direction: column; /* Align elements vertically */
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    min-height: 100vh;
+
+    /*  Why Use vh?
+
+        Using vh is especially useful for creating full-screen sections or elements 
+        that need to scale with the viewport height, making it ideal for responsive 
+        layouts and ensuring elements adjust smoothly to different screen sizes.
+
+        vh stands for viewport height and is a unit that represents a percentage of 
+        the viewport's height (the visible area of the browser window).
+
+          -  1vh is equal to 1% of the viewport height.
+          -  100vh makes an element’s height equal to the full height of the viewport.
+    
+    */
+
+}
+
