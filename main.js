@@ -1,3 +1,18 @@
+
+
+
+// Keep Functions inside randomFunc Object 
+const randomFunc = {
+
+    lower: getRandomLower,
+    upper: getRandomUpper,
+    number: getRandomDigit,
+    symbol: getRandomSymbol
+
+}
+
+
+
 // Generator Functions
 
 /* Character Codes 
