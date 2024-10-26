@@ -97,11 +97,11 @@ function getRandomDigit(){
 // Generate Random Symbol
 function getRandomSymbol(){
 
-    // Create a String with All Symbbols
+    // Create a String with All Symbols
     const symbols = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
 
-    // Get first Symbol
-    return symbols[0];
+    // Get Symbol with Random Index Number 
+    return symbols[Math.floor(Math.random() * symbols.length)];
     
 }
 
