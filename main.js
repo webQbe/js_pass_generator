@@ -1,3 +1,14 @@
+// Define DOM Elements
+const result = document.getElementById('result');
+const length = document.getElementById('length');
+const upperCheck = document.getElementById('uppercase');
+const lowerCheck = document.getElementById('lowercase');
+const numCheck = document.getElementById('number');
+const symbCheck = document.getElementById('symbol');
+const genBtn = document.getElementById('generate');
+const clipBtn = document.getElementById('clipboard');
+
+
 
 
 
