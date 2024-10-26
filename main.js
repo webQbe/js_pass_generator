@@ -9,6 +9,8 @@ x: 120, y: 121, z: 122
 
 */
 
-// Get Random Character
+// Generate Random Character
 
-console.log(Math.random());
+// To get a decimal number between 1 - 26
+// Random decimal is multiplied by number of characters
+console.log(Math.random() * 26);
