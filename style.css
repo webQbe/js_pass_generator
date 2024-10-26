@@ -207,3 +207,24 @@ input[type='checkbox']{
 
 }
 
+.setting{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+
+    /*  justify-content: space-between;
+
+        This property evenly distributes flex items within the container.
+
+        The first item is aligned to the start of the container, and 
+        the last item is aligned to the end.
+
+        Equal space is placed between each item, but there is no space 
+        at the start or end of the container.
+        
+        */
+
+}
+
