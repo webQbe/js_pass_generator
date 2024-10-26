@@ -63,23 +63,6 @@
   { "letter": "Z", "code": 90 }
 ]
 
-
-Digits from 0 to 9 with its corresponding ASCII code
-[
-  { "digit": "0", "code": 48 },
-  { "digit": "1", "code": 49 },
-  { "digit": "2", "code": 50 },
-  { "digit": "3", "code": 51 },
-  { "digit": "4", "code": 52 },
-  { "digit": "5", "code": 53 },
-  { "digit": "6", "code": 54 },
-  { "digit": "7", "code": 55 },
-  { "digit": "8", "code": 56 },
-  { "digit": "9", "code": 57 }
-]
-
-
-
 */
 
 // Generate Random Lowercase Character
@@ -111,7 +94,19 @@ function getRandomDigit(){
     return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
 }
 
+// Generate Random Symbol
+function getRandomSymbol(){
+
+    // Create a String with All Symbbols
+    const symbols = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
+
+    // Get first Symbol
+    return symbols[0];
+    
+}
 
 
-// Get Random Characters & Number
-console.log(getRandomLower(), getRandomUpper(), getRandomDigit()); 
+
+
+// Get Random Characters, Number, & Symbol
+console.log(getRandomLower(), getRandomUpper(), getRandomDigit(), getRandomSymbol()); 
