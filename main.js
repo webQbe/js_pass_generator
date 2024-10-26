@@ -26,7 +26,7 @@ genBtn.addEventListener('click', () => {
 
     // Get value from lenInput
     const length = lenInput.value;
-    console.log(length);
+    console.log(typeof length);
 
 });
 
