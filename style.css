@@ -69,3 +69,29 @@ input[type='checkbox']{
 }
 
 
+.container{
+
+    background-color: #23235b;
+    box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    width: 350px;
+    max-width: 100%;
+
+    /* box-shadow: 0px 2px 10px rgba(
+    
+        0px: Horizontal offset — moves the shadow horizontally. 
+            0px means no horizontal offset.
+
+        2px: Vertical offset — moves the shadow vertically. 
+            2px places the shadow 2 pixels below the element.
+
+        10px: Blur radius — controls the blur of the shadow. 
+        A higher value results in a softer, more spread-out shadow. 
+        Here, 10px creates a moderately soft shadow.
+
+        rgba(255, 255, 255, 0.2): Shadow color with transparency.
+    
+    */
+
+}
+
