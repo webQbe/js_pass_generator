@@ -9,4 +9,6 @@ x: 120, y: 121, z: 122
 
 */
 
-console.log(String.fromCharCode(97));
+// Get Random Character
+
+console.log(Math.random());
