@@ -25,7 +25,7 @@ const randomFunc = {
 genBtn.addEventListener('click', () => {
 
     // Get value from lenInput
-    const length = lenInput.value;
+    const length = +lenInput.value;
     console.log(typeof length);
 
 });
