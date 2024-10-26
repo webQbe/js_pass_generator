@@ -49,3 +49,16 @@ p {
 
 }
 
+h2 {
+
+    margin: 10px 0 20px;
+    text-align: center;
+
+    /* 
+        10px for the top margin.
+        0 for the left and right margins.
+        20px for the bottom margin.
+    */
+
+}
+
