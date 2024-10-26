@@ -11,8 +11,17 @@ x: 120, y: 121, z: 122
 
 // Generate Random Character
 
-// To get a decimal number between 1 - 26
-// Random decimal is multiplied by number of characters
-// Round down decimal to get a whole number
-// Get random code between 97 - 122
-console.log(Math.floor(Math.random() * 26) + 97);
+
+function getRandomLower(){
+
+    // To get a decimal number between 1 - 26
+    // Random decimal is multiplied by number of characters
+    // Round down decimal to get a whole number
+    // Get random code between 97 - 122
+    // Get character using random code 
+    return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
+
+}
+
+
+console.log(getRandomLower()); 
