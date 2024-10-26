@@ -57,14 +57,17 @@ function passGen(lower, upper, number, symbol, length){
     // 2. Filter out Unchecked Options
 
     // Count Checked Options
-    const typesCount = lower + upper + number + symbol;
+    const tickCount = lower + upper + number + symbol;
 
     // Log Total Checked Count
-    console.log('typesCount: ', typesCount);
+    console.log('tickCount: ', tickCount);
 
     // Create Array with Status of Each Option
-    const typesArr = [{upper}, {lower}, {number}, {symbol}];
-    console.log(typesArr);
+    const options = [{upper}, {lower}, {number}, {symbol}]
+       
+    // Filter Out Unchecked Options
+    const filterOptions = options.filter(item => Object.values(item)[0]);
+    console.log('Filtered Options: ', filterOptions);
 
  
 }
