@@ -22,11 +22,11 @@ const randomFunc = {
 
 // EVENT LISTENERS
 
+// Listen for genBtn click
 genBtn.addEventListener('click', () => {
 
     // Get value from lenInput
     const length = +lenInput.value;
-    console.log(typeof length);
 
     // Checked Options
     // True if Checked, False if unchecked
@@ -35,10 +35,36 @@ genBtn.addEventListener('click', () => {
     const hasNumber = numCheck.checked;
     const hasSymbol = symbCheck.checked;
 
-    // Log Checked & Unchecked options
-    console.log(hasLower, hasUpper, hasNumber, hasSymbol);
+    // Pass Options & Length to passGen()
+    // Output to result element
+    result.innerHTML = passGen(hasLower, hasUpper, hasNumber, hasSymbol, length);
 
 });
+
+// Generate Password
+function passGen(lower, upper, number, symbol, length){
+
+    // 1. Initialize Password Variable
+    // 2. Filter out Unchecked Options
+    // 3. Loop Over length & Call generator() for each type
+    // 4. Add Final Password to Password Variable & Return 
+
+    // 1. Initialize Password Variable
+
+    let genPass = '';
+
+
+    // 2. Filter out Unchecked Options
+
+    // Count Checked Options
+    const typesCount = lower + upper + number + symbol;
+
+    // Log Total Checked Count
+    console.log('typesCount: ', typesCount);
+
+ 
+}
+
 
 
 
