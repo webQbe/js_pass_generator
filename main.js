@@ -14,4 +14,5 @@ x: 120, y: 121, z: 122
 // To get a decimal number between 1 - 26
 // Random decimal is multiplied by number of characters
 // Round down decimal to get a whole number
-console.log(Math.floor(Math.random() * 26));
+// Get random code between 97 - 122
+console.log(Math.floor(Math.random() * 26) + 97);
