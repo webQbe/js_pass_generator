@@ -41,6 +41,39 @@ genBtn.addEventListener('click', () => {
 
 });
 
+/* Copy Password to Clipboard */
+
+// Listen for clicks
+clipBtn.addEventListener('click', () => {
+
+    // Create a Textarea Element
+    const textarea = document.createElement('textarea');
+
+    // Get Password from result Element
+    const password = result.innerText;
+
+    // Check if password exists on result Element
+    if(!password){
+        return;
+    }
+
+    // Add Password value to Textarea
+    textarea.value = password;
+
+    // Append textarea to body 
+    document.body.appendChild(textarea);
+
+    // Select textarea, Copy Value, & Remove textarea
+    textarea.select();
+    document.execCommand('copy');
+    textarea.remove();
+
+    // Show Alert
+    alert('Password Copied to Clipboard!')
+
+});
+
+
 // Generate Password
 function passGen(lower, upper, number, symbol, length){
 
