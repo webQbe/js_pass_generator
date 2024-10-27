@@ -66,8 +66,8 @@ function passGen(lower, upper, number, symbol, length){
     const options = [{upper}, {lower}, {number}, {symbol}]
        
     // Filter Out Unchecked Options
-    const filterOptions = options.filter(item => Object.values(item)[0]);
-    console.log('Filtered Options: ', filterOptions);
+    const filteredOptions = options.filter(item => Object.values(item)[0]);
+    console.log('Filtered Options: ', filteredOptions);
 
     // When No Option is Selected
     if(tickCount === 0){
@@ -76,6 +76,23 @@ function passGen(lower, upper, number, symbol, length){
         return '';
 
     }
+
+    // 3. Loop Over length & Call generator() for each option
+
+    // Until i is equal to password length(e.g. 20),
+    // Increment i by tickCount(1-4)
+    for(let i = 0; i < length; i += tickCount){
+
+        filteredOptions.forEach(option => {
+
+            // funcName will be one of the 4 options
+            const funcName = Object.keys(option)[0];
+            console.log('funcName: ', funcName);
+
+        });
+
+    }
+
 
 
  
