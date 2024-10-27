@@ -101,6 +101,10 @@ function passGen(lower, upper, number, symbol, length){
     // Log Generated Password
     console.log(genPass);
 
+    // Generate Password Shorter than 4
+    // Start from first character & set limit by length
+    console.log(genPass.slice(0, length));
+
 
 
  
