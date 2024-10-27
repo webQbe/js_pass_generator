@@ -79,19 +79,27 @@ function passGen(lower, upper, number, symbol, length){
 
     // 3. Loop Over length & Call generator() for each option
 
-    // Until i is equal to password length(e.g. 20),
-    // Increment i by tickCount(1-4)
+    // Until i is equal to password length (min = 4 characters),
+    // Increment i by tickCount (1-4)
     for(let i = 0; i < length; i += tickCount){
 
         filteredOptions.forEach(option => {
 
             // funcName will be one of the 4 options
             const funcName = Object.keys(option)[0];
-            console.log('funcName: ', funcName);
+            console.log('funcName: ', funcName)
+
+            // Use funcName Key To 
+            // Select A Generator Function From randomFunc Object 
+            // Append Generated Character To genPass Array
+            genPass += randomFunc[funcName]();
 
         });
 
     }
+
+    // Log Generated Password
+    console.log(genPass);
 
 
 
