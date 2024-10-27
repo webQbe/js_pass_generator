@@ -36,7 +36,7 @@ genBtn.addEventListener('click', () => {
     const hasSymbol = symbCheck.checked;
 
     // Pass Options & Length to passGen()
-    // Output to result element
+    // Get from passGen & Output to UI
     result.innerHTML = passGen(hasLower, hasUpper, hasNumber, hasSymbol, length);
 
 });
@@ -98,15 +98,11 @@ function passGen(lower, upper, number, symbol, length){
 
     }
 
-    // Log Generated Password
-    console.log(genPass);
+    // Generate Password Any Length Password
+    const finalPass =  genPass.slice(0, length);
 
-    // Generate Password Shorter than 4
-    // Start from first character & set limit by length
-    console.log(genPass.slice(0, length));
-
-
-
+    // Return to UI
+    return finalPass;
  
 }
 
